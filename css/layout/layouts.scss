@@ -3,6 +3,7 @@
 	justify-content: center;
 	align-items: center;
 	height: 40vh;
+	padding: 0 25px;
 	background-image: url("../images/header.jpg");
 	background-size: cover;
 	background-position: center;
@@ -24,15 +25,22 @@
 			margin-bottom: 20px;
 			&--main {
 				display: block;
-				font-size: 35px;
+				font-size: 36px;
 				font-weight: $normal;
-				letter-spacing: 4px;
+				letter-spacing: 3px;
 			}
 			&--sub {
 				display: block;
-				font-size: 19px;
+				font-size: 16px;
 				font-weight: $semi-bold;
+				letter-spacing: 1px;
 			}
 		}
 	}
+}
+
+.text-wrapper p {
+	padding: 5px 15px;
+	display: flex;
+	text-align: center;
 }
