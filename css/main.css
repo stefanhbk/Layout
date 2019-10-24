@@ -211,6 +211,31 @@
 .main-wrapper .btn-top-link.down {
   bottom: 50px;
 }
+@media all and (min-width: 1366px) {
+  .main-wrapper {
+    max-width: 1400px;
+  }
+  .main-wrapper .header {
+    height: 50vh;
+  }
+  .main-wrapper .header__text-box {
+    margin-bottom: 200px;
+  }
+  .main-wrapper .header__text-box .heading-primary--main {
+    font-size: 68px;
+  }
+  .main-wrapper .header__text-box .heading-primary--sub {
+    font-size: 29px;
+  }
+  .main-wrapper .text-wrapper p {
+    padding: 10px 20px 20px;
+    font-size: 23px;
+    font-weight: 400;
+  }
+  .main-wrapper .layout-wrapper {
+    grid-template-columns: repeat(3, 1fr);
+  }
+}
 
 *,
 *::after,

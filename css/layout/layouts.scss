@@ -214,4 +214,29 @@
 			bottom: 50px;
 		}
 	}
+	@media all and (min-width: 1366px) {
+		max-width: 1400px;
+		.header {
+			height: 50vh;
+			&__text-box {
+				margin-bottom: 200px;
+				.heading-primary {
+					&--main {
+						font-size: 68px;
+					}
+					&--sub {
+						font-size: 29px;
+					}
+				}
+			}
+		}
+		.text-wrapper p {
+			padding: 10px 20px 20px;
+			font-size: 23px;
+			font-weight: $normal;
+		}
+		.layout-wrapper {
+			grid-template-columns: repeat(3, 1fr);
+		}
+	}
 }
