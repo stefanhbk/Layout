@@ -188,6 +188,7 @@
   height: 300px;
   transition: all 0.5s ease;
   filter: grayscale(80%);
+  cursor: pointer;
 }
 .main-wrapper .footer__background:hover {
   filter: none;
@@ -213,7 +214,7 @@
 }
 @media all and (min-width: 1366px) {
   .main-wrapper {
-    max-width: 1400px;
+    max-width: 950px;
   }
   .main-wrapper .header {
     height: 50vh;
@@ -233,7 +234,53 @@
     font-weight: 400;
   }
   .main-wrapper .layout-wrapper {
+    padding: 0 30px;
+    grid-gap: 20px;
     grid-template-columns: repeat(3, 1fr);
+  }
+  .main-wrapper .layout-wrapper .info h3 {
+    font-size: 26px;
+  }
+  .main-wrapper .layout-wrapper .info p {
+    font-size: 23px;
+    margin: 5px 45px 10px;
+  }
+  .main-wrapper .layout-wrapper .info-one {
+    grid-column: 2;
+    grid-row: 1/2;
+  }
+  .main-wrapper .layout-wrapper .img-wrapper-one {
+    grid-column: 3;
+    grid-row: 1/2;
+    height: 350px;
+  }
+  .main-wrapper .layout-wrapper .order-two {
+    grid-row: 2;
+  }
+  .main-wrapper .layout-wrapper .info-two {
+    grid-column: 3;
+    grid-row: 2/3;
+  }
+  .main-wrapper .layout-wrapper .img-wrapper-two {
+    grid-column: 1;
+    grid-row: 2/3;
+  }
+  .main-wrapper .layout-wrapper .order-three {
+    grid-column: 1;
+    grid-row: 3/4;
+  }
+  .main-wrapper .layout-wrapper .info-three {
+    grid-column: 2;
+  }
+  .main-wrapper .layout-wrapper .img-wrapper-three {
+    grid-column: 3;
+    grid-row: 3/5;
+    height: 100%;
+  }
+  .main-wrapper .layout-wrapper .order-four {
+    order: 10;
+    grid-column: 2;
+    grid-row: 4/5;
   }
 }
 
@@ -253,10 +300,10 @@ body {
 @keyframes moveInLeft {
   0% {
     opacity: 0;
-    transform: translateX(-10rem);
+    transform: translateX(-100px);
   }
   80% {
-    transform: translateX(1rem);
+    transform: translateX(10px);
   }
   100% {
     opacity: 1;
@@ -266,10 +313,10 @@ body {
 @keyframes moveInRight {
   0% {
     opacity: 0;
-    transform: translateX(10rem);
+    transform: translateX(100px);
   }
   80% {
-    transform: translateX(-1rem);
+    transform: translateX(-10px);
   }
   100% {
     opacity: 1;
@@ -279,7 +326,7 @@ body {
 @keyframes moveInBottom {
   0% {
     opacity: 0;
-    transform: translateY(3rem);
+    transform: translateY(30px);
   }
   100% {
     opacity: 1;

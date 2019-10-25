@@ -189,6 +189,7 @@
 			height: 300px;
 			transition: all 0.5s ease;
 			filter: grayscale(80%);
+			cursor: pointer;
 			&:hover {
 				filter: none;
 			}
@@ -214,8 +215,10 @@
 			bottom: 50px;
 		}
 	}
+
+	// Desktop layout
 	@media all and (min-width: 1366px) {
-		max-width: 1400px;
+		max-width: 950px;
 		.header {
 			height: 50vh;
 			&__text-box {
@@ -236,7 +239,55 @@
 			font-weight: $normal;
 		}
 		.layout-wrapper {
+			padding: 0 30px;
+			grid-gap: 20px;
 			grid-template-columns: repeat(3, 1fr);
+			.info {
+				h3 {
+					font-size: 26px;
+				}
+				p {
+					font-size: 23px;
+					margin: 5px 45px 10px;
+				}
+			}
+			.info-one {
+				grid-column: 2;
+				grid-row: 1 / 2;
+			}
+			.img-wrapper-one {
+				grid-column: 3;
+				grid-row: 1/2;
+				height: 350px;
+			}
+			.order-two {
+				grid-row: 2;
+			}
+			.info-two {
+				grid-column: 3;
+				grid-row: 2/3;
+			}
+			.img-wrapper-two {
+				grid-column: 1;
+				grid-row: 2/3;
+			}
+			.order-three {
+				grid-column: 1;
+				grid-row: 3 / 4;
+			}
+			.info-three {
+				grid-column: 2;
+			}
+			.img-wrapper-three {
+				grid-column: 3;
+				grid-row: 3 / 5;
+				height: 100%;
+			}
+			.order-four {
+				order: 10;
+				grid-column: 2;
+				grid-row: 4/5;
+			}
 		}
 	}
 }
