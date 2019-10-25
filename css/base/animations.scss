@@ -1,3 +1,4 @@
+// Animation for header text
 @keyframes moveInLeft {
 	0% {
 		opacity: 0;
@@ -34,5 +35,27 @@
 	100% {
 		opacity: 1;
 		transform: translate(0);
+	}
+}
+
+// Animation for footer text
+@keyframes highlight {
+	0% {
+		opacity: 0;
+	}
+	30% {
+		opacity: 0.7;
+	}
+	40% {
+		opacity: 0.3;
+	}
+	50% {
+		opacity: 1;
+	}
+	90% {
+		opacity: 1;
+	}
+	100% {
+		opacity: 0;
 	}
 }
