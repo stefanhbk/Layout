@@ -180,6 +180,7 @@
 				font-family: $font-primary;
 				font-weight: $bold;
 				color: $color-blue;
+				animation: highlight 2s infinite;
 			}
 		}
 		&__background {
@@ -222,7 +223,7 @@
 		.header {
 			height: 50vh;
 			&__text-box {
-				margin-bottom: 200px;
+				margin-bottom: 150px;
 				.heading-primary {
 					&--main {
 						font-size: 68px;
@@ -293,8 +294,10 @@
 			flex-direction: row;
 			margin-top: 50px;
 			padding: 0 30px;
+			position: relative;
 			&__text-info {
 				width: 50%;
+				margin-top: 20px;
 				&--main {
 					font-size: 34px;
 				}
@@ -302,9 +305,9 @@
 					font-size: 18px;
 				}
 				&--highlight {
-					font-size: 60px;
 					position: absolute;
-					left: 42%;
+					left: 37%;
+					font-size: 60px;
 					z-index: 1;
 					span {
 						color: $color-white;
