@@ -289,5 +289,32 @@
 				grid-row: 4/5;
 			}
 		}
+		.footer {
+			flex-direction: row;
+			margin-top: 50px;
+			padding: 0 30px;
+			&__text-info {
+				width: 50%;
+				&--main {
+					font-size: 34px;
+				}
+				&--sub {
+					font-size: 18px;
+				}
+				&--highlight {
+					font-size: 60px;
+					position: absolute;
+					left: 42%;
+					z-index: 1;
+					span {
+						color: $color-white;
+					}
+				}
+			}
+			&__background {
+				width: 50%;
+				height: 600px;
+			}
+		}
 	}
 }

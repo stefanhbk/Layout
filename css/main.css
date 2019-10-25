@@ -282,6 +282,33 @@
     grid-column: 2;
     grid-row: 4/5;
   }
+  .main-wrapper .footer {
+    flex-direction: row;
+    margin-top: 50px;
+    padding: 0 30px;
+  }
+  .main-wrapper .footer__text-info {
+    width: 50%;
+  }
+  .main-wrapper .footer__text-info--main {
+    font-size: 34px;
+  }
+  .main-wrapper .footer__text-info--sub {
+    font-size: 18px;
+  }
+  .main-wrapper .footer__text-info--highlight {
+    font-size: 60px;
+    position: absolute;
+    left: 42%;
+    z-index: 1;
+  }
+  .main-wrapper .footer__text-info--highlight span {
+    color: #fff;
+  }
+  .main-wrapper .footer__background {
+    width: 50%;
+    height: 600px;
+  }
 }
 
 *,
